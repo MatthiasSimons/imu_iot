@@ -36,8 +36,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.micropython.configurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.server">
+    <configuration name="Flash cert" type="MicroPythonConfigurationType" factoryName="MicroPython" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/client/cert">
+      <module name="imu_iot" />
+      <method v="2" />
+    </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="imu_iot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,6 +67,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.server" />
+        <item itemvalue="MicroPython.Flash cert" />
       </list>
     </recent_temporary>
   </component>
@@ -88,23 +94,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="209" key="GridCell.Tab.0.bottom" timestamp="1638268669426">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1899" height="299" key="GridCell.Tab.0.bottom" timestamp="1639997067109">
+      <screen x="-1920" y="-433" width="1920" height="1080" />
     </state>
-    <state width="1259" height="209" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1638268669426" />
-    <state width="1259" height="209" key="GridCell.Tab.0.center" timestamp="1638268669424">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1899" height="299" key="GridCell.Tab.0.bottom/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1639997067109" />
+    <state width="1259" height="209" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1638287176068" />
+    <state width="1899" height="299" key="GridCell.Tab.0.center" timestamp="1639997067107">
+      <screen x="-1920" y="-433" width="1920" height="1080" />
     </state>
-    <state width="1259" height="209" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1638268669424" />
-    <state width="1259" height="209" key="GridCell.Tab.0.left" timestamp="1638268669423">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1899" height="299" key="GridCell.Tab.0.center/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1639997067107" />
+    <state width="1259" height="209" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1638287176064" />
+    <state width="1899" height="299" key="GridCell.Tab.0.left" timestamp="1639997067105">
+      <screen x="-1920" y="-433" width="1920" height="1080" />
     </state>
-    <state width="1259" height="209" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1638268669423" />
-    <state width="1259" height="209" key="GridCell.Tab.0.right" timestamp="1638268669425">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1899" height="299" key="GridCell.Tab.0.left/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1639997067105" />
+    <state width="1259" height="209" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1638287176059" />
+    <state width="1899" height="299" key="GridCell.Tab.0.right" timestamp="1639997067108">
+      <screen x="-1920" y="-433" width="1920" height="1080" />
     </state>
-    <state width="1259" height="209" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1638268669425" />
+    <state width="1899" height="299" key="GridCell.Tab.0.right/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1639997067108" />
+    <state width="1259" height="209" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1638287176065" />
+    <state x="-1451" y="-257" key="SettingsEditor" timestamp="1639993960821">
+      <screen x="-1920" y="-433" width="1920" height="1080" />
+    </state>
+    <state x="-1451" y="-257" key="SettingsEditor/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1639993960821" />
   </component>
 </project>
