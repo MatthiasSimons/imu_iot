@@ -12,7 +12,7 @@ DataCounter = 0
 #ssid, pwd, ip = "Tyrion LANnister", "ALM_PtrStr13", "192.168.0.129"
 #ssid, pwd, ip = "Hoehlenstrahlung", "liebstdudiehoehle", '192.168.0.106'
 #ssid, pwd, ip = "HI-EG-2-4", "778328778328778328", "192.168.178.21"
-ssid, pwd, ip = "Haus LANnister", "JTzvt3hn5daw", "192.168.0.129"
+ssid, pwd, ip = "Haus LANnister", "ALM_PtrStr13", "192.168.0.129"
 
 status = True
 server_connection = False

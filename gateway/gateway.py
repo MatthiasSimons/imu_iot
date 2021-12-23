@@ -2,6 +2,7 @@ import pymongo
 from pymongo import MongoClient
 import socket
 import pandas as pd
+import numpy as np
 
 class Gateway:
     def __init__(self, client_ip = "localhost:27017", database = "monitoring",collection = "test_collection"):
@@ -20,13 +21,32 @@ class Gateway:
         print('Connection address:', addr)
         return conn
 
-    def query(self, condition = {}):
+    def query(self, condition = {}, first = None, last = None):
         query = list(self.collection.find(condition))
-
         if query is None:
             query = []
+        if first != None:
+            query = query[:first]
+        if last != None:
+            query = query[-last:]
+        return self.process(query)
 
-        return pd.DataFrame(query)
+    def process(self, query):
+        df = pd.DataFrame(query)
+        df['datetime'] = pd.to_datetime(df['datetime'], format='%Y/%m/%d %H:%M:%S:%f')
+        df["timedelta"] = (df['datetime'] - df['datetime'].values[0]).dt.total_seconds()
+
+        df["AX"] = df["AX"].astype(float)
+        df["AY"] = df["AY"].astype(float)
+        df["AZ"] = df["AZ"].astype(float)
+
+        df["A"] = np.sqrt(df["AX"] ** 2 + df["AY"] ** 2 + df["AZ"] ** 2)
+        df["AX-mean"] = df["AX"] - df["AX"].mean()
+        df["AY-mean"] = df["AY"] - df["AY"].mean()
+        df["AZ-mean"] = df["AZ"] - df["AZ"].mean()
+        df["A-mean"] = df["A"] - df["A"].mean()
+        return df
+
 
 
 class Process(Gateway):
@@ -47,9 +67,12 @@ class Process(Gateway):
                     "AY": data_string[2],
                     "AZ": data_string[3],
                     }
-
                 self.collection.insert_one(data_dic)
         conn.close()
+
+    def label(self):
+        # implement ml model -> input data; output label
+        return None
 
 
 
@@ -80,8 +103,10 @@ class Training(Gateway):
         conn.close()
 
 if __name__ == "__main__":
-    label = input()
-    training = Training(database = "monitoring",collection = "ml_training")
-    training.fill_db(label=label)
+    program, f, w = "Pflegeleicht 30", 1000, 3.1
+    # labels: leerlauf, pumpen, waschen, schleudern
 
+    #label = str(input("label: "))
+    training = Training(database = "monitoring",collection = "ml_training {}/{}/{}".format(program, f, w))
+    #training.fill_db(label=label)
 
