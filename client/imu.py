@@ -1,4 +1,4 @@
-# imu.py MicroPython driver for the InvenSense inertial measurement units
+# imu.csv MicroPython driver for the InvenSense inertial measurement units
 # This is the base class
 # Adapted from Sebastian Plamauer's MPU9150 driver:
 # https://github.com/micropython-IMU/micropython-mpu9150.git
