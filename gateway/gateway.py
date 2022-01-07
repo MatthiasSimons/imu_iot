@@ -1,12 +1,8 @@
-import pymongo
 from pymongo import MongoClient
 import socket
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
-import joblib
-import numpy as np
-import gateway
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import SGDClassifier
 import joblib
@@ -77,15 +73,17 @@ class Gateway:
         encoder.classes_ = np.load('classes.npy', allow_pickle=True)
         return encoder.inverse_transform(label)
 
-    def fft_peaks(a, peaks=3):
+    def fft_peaks(a, peaks=None):
         # fast fourier analysis and return n-peak
         n = a.size
         a_z_without_mean = a - np.mean(a)
         yfreq = np.fft.rfft(a_z_without_mean, n, norm='ortho')
         yfreq = np.abs(yfreq)
         yfreq[0] = 0.0
+        if peaks == None:
+            peaks = len(yfreq)
         yfreq[yfreq < sorted(yfreq, reverse=True)[:peaks][-1:]] = 0
-        return sorted(yfreq, reverse=True)[:peaks]
+        return yfreq#sorted(yfreq, reverse=True)[:peaks]
 
 class Process(Gateway):
     def fill_db(self, buffer_size = 20480):
@@ -202,11 +200,11 @@ class Training(Gateway):
 
 
 if __name__ == "__main__":
-    program, f, w = "Pflegeleicht 30", 1000, 3.1
+    program, f, w = "test", 1000, 3.1
     training = Training(database = "monitoring",collection = "ml_training {}/{}/{}".format(program, f, w))
 
     # labels: leerlauf, pumpen, waschen, schleudern
-    # label = str(input("label: "))
-    #training.fill_db(label=label)
-    training.train_model()
+    label = str(input("label: "))
+    training.fill_db(label=label)
+    #training.train_model()
 

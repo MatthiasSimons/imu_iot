@@ -36,38 +36,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/analyse" />
       <recent name="$PROJECT_DIR$/gateway" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/client/analyse" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gateway">
-    <configuration name="analyze" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.training_tab">
+    <configuration name="Flash gui.py" type="MicroPythonConfigurationType" factoryName="MicroPython" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gui/gui.py">
       <module name="imu_iot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gateway" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gateway/analyze.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fill_db_from_csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Tab1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="imu_iot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,11 +59,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/database" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database/fill_db_from_csv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/Tab1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ml-model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="imu_iot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,11 +101,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gateway" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gateway/ml-model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="training_tab" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="imu_iot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +122,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server/server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/training_tab.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.training_tab" />
+        <item itemvalue="Python.gui" />
+        <item itemvalue="Python.Tab1" />
         <item itemvalue="Python.gateway" />
-        <item itemvalue="Python.ml-model" />
-        <item itemvalue="Python.analyze" />
-        <item itemvalue="Python.server" />
-        <item itemvalue="Python.fill_db_from_csv" />
+        <item itemvalue="MicroPython.Flash gui.py" />
       </list>
     </recent_temporary>
   </component>
@@ -187,51 +171,60 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1223" y="-87" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1640218980313">
-      <screen x="-1920" y="-433" width="1920" height="1080" />
+    <state x="-1223" y="-111" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1641468373865">
+      <screen x="-1920" y="-433" width="1920" height="1004" />
     </state>
+    <state x="-1223" y="-111" key="#com.intellij.fileTypes.FileTypeChooser/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641468373865" />
     <state x="-1223" y="-87" key="#com.intellij.fileTypes.FileTypeChooser/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640218980313" />
-    <state width="1259" height="89" key="GridCell.Tab.0.bottom" timestamp="1640542204462">
+    <state width="1259" height="72" key="GridCell.Tab.0.bottom" timestamp="1641571160738">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="939" height="134" key="GridCell.Tab.0.bottom/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1640267423795" />
+    <state width="1114" height="117" key="GridCell.Tab.0.bottom/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641469054243" />
     <state width="1899" height="134" key="GridCell.Tab.0.bottom/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640270482368" />
     <state width="1899" height="197" key="GridCell.Tab.0.bottom/-1920.-433.1920.1080/0.25.1280.775@-1920.-433.1920.1080" timestamp="1640219109808" />
-    <state width="675" height="134" key="GridCell.Tab.0.bottom/0.0.1280.724@0.0.1280.724" timestamp="1640260568349" />
-    <state width="1259" height="89" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1640542204462" />
+    <state width="1259" height="72" key="GridCell.Tab.0.bottom/0.0.1280.724@0.0.1280.724" timestamp="1641570556028" />
+    <state width="619" height="117" key="GridCell.Tab.0.bottom/0.0.1280.728@0.0.1280.728" timestamp="1641313106437" />
+    <state width="1259" height="72" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1641571160738" />
+    <state width="1114" height="117" key="GridCell.Tab.0.bottom/0.0.1920.1004@0.0.1920.1004" timestamp="1641486178446" />
     <state width="1899" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1640097269758" />
-    <state width="1259" height="89" key="GridCell.Tab.0.center" timestamp="1640542204461">
+    <state width="1259" height="72" key="GridCell.Tab.0.center" timestamp="1641571160736">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="939" height="134" key="GridCell.Tab.0.center/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1640267423794" />
+    <state width="1114" height="117" key="GridCell.Tab.0.center/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641469054241" />
     <state width="1899" height="134" key="GridCell.Tab.0.center/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640270482366" />
     <state width="1899" height="197" key="GridCell.Tab.0.center/-1920.-433.1920.1080/0.25.1280.775@-1920.-433.1920.1080" timestamp="1640219109806" />
-    <state width="675" height="134" key="GridCell.Tab.0.center/0.0.1280.724@0.0.1280.724" timestamp="1640260568348" />
-    <state width="1259" height="89" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1640542204461" />
+    <state width="1259" height="72" key="GridCell.Tab.0.center/0.0.1280.724@0.0.1280.724" timestamp="1641570556027" />
+    <state width="619" height="117" key="GridCell.Tab.0.center/0.0.1280.728@0.0.1280.728" timestamp="1641313106436" />
+    <state width="1259" height="72" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1641571160736" />
+    <state width="1114" height="117" key="GridCell.Tab.0.center/0.0.1920.1004@0.0.1920.1004" timestamp="1641486178446" />
     <state width="1899" height="299" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1640097269756" />
-    <state width="1259" height="89" key="GridCell.Tab.0.left" timestamp="1640542204460">
+    <state width="1259" height="72" key="GridCell.Tab.0.left" timestamp="1641571160736">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="939" height="134" key="GridCell.Tab.0.left/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1640267423793" />
+    <state width="1114" height="117" key="GridCell.Tab.0.left/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641469054241" />
     <state width="1899" height="134" key="GridCell.Tab.0.left/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640270482365" />
     <state width="1899" height="197" key="GridCell.Tab.0.left/-1920.-433.1920.1080/0.25.1280.775@-1920.-433.1920.1080" timestamp="1640219109805" />
-    <state width="675" height="134" key="GridCell.Tab.0.left/0.0.1280.724@0.0.1280.724" timestamp="1640260568347" />
-    <state width="1259" height="89" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1640542204460" />
+    <state width="1259" height="72" key="GridCell.Tab.0.left/0.0.1280.724@0.0.1280.724" timestamp="1641570556026" />
+    <state width="619" height="117" key="GridCell.Tab.0.left/0.0.1280.728@0.0.1280.728" timestamp="1641313106435" />
+    <state width="1259" height="72" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1641571160736" />
+    <state width="1114" height="117" key="GridCell.Tab.0.left/0.0.1920.1004@0.0.1920.1004" timestamp="1641486178445" />
     <state width="1899" height="299" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1640097269755" />
-    <state width="1259" height="89" key="GridCell.Tab.0.right" timestamp="1640542204461">
+    <state width="1259" height="72" key="GridCell.Tab.0.right" timestamp="1641571160737">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="939" height="134" key="GridCell.Tab.0.right/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1640267423794" />
+    <state width="1114" height="117" key="GridCell.Tab.0.right/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641469054242" />
     <state width="1899" height="134" key="GridCell.Tab.0.right/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640270482367" />
     <state width="1899" height="197" key="GridCell.Tab.0.right/-1920.-433.1920.1080/0.25.1280.775@-1920.-433.1920.1080" timestamp="1640219109807" />
-    <state width="675" height="134" key="GridCell.Tab.0.right/0.0.1280.724@0.0.1280.724" timestamp="1640260568348" />
-    <state width="1259" height="89" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1640542204461" />
+    <state width="1259" height="72" key="GridCell.Tab.0.right/0.0.1280.724@0.0.1280.724" timestamp="1641570556027" />
+    <state width="619" height="117" key="GridCell.Tab.0.right/0.0.1280.728@0.0.1280.728" timestamp="1641313106437" />
+    <state width="1259" height="72" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1641571160737" />
+    <state width="1114" height="117" key="GridCell.Tab.0.right/0.0.1920.1004@0.0.1920.1004" timestamp="1641486178446" />
     <state width="1899" height="299" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1640097269757" />
-    <state x="298" y="0" width="982" height="724" key="SettingsEditor" timestamp="1640531872843">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="298" y="0" width="982" height="724" key="SettingsEditor" timestamp="1641559790551">
+      <screen x="0" y="0" width="1280" height="724" />
     </state>
     <state x="-1451" y="-257" key="SettingsEditor/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640219008998" />
-    <state x="298" y="0" width="982" height="724" key="SettingsEditor/0.0.1280.724@0.0.1280.724" timestamp="1640108142662" />
-    <state x="298" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1640531872843" />
+    <state x="298" y="0" width="982" height="724" key="SettingsEditor/0.0.1280.724@0.0.1280.724" timestamp="1641559790551" />
+    <state x="298" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1640542708163" />
   </component>
 </project>

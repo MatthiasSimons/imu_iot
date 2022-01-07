@@ -1,40 +1,54 @@
-import PySide6.QtCore
+import tkinter as tk
+from tkinter import ttk
 
-# Prints PySide6 version
-print(PySide6.__version__)
+from tkinter import *
 
-# Prints the Qt version used to compile PySide6
-print(PySide6.QtCore.__version__)
+# these two imports are important
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from matplotlib.figure import Figure
+import time
+import threading
 
-import sys
-import random
-from PySide6 import QtCore, QtWidgets, QtGui
-
-class MyWidget(QtWidgets.QWidget):
+class MainApplication(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.hello = ["Hallo Welt", "Hei maailma", "Hola Mundo", "Привет мир"]
+        self.title("Example")
+        self.geometry('300x300')
 
-        self.button = QtWidgets.QPushButton("Click me!")
-        self.text = QtWidgets.QLabel("Hello World",
-                                     alignment=QtCore.Qt.AlignCenter)
+        self.notebook = ttk.Notebook(self)
 
-        self.layout = QtWidgets.QVBoxLayout(self)
-        self.layout.addWidget(self.text)
-        self.layout.addWidget(self.button)
+        self.Frame1 = Frame1()
+        self.Frame2 = Frame2()
 
-        self.button.clicked.connect(self.magic)
+        self.notebook.add(self.Frame1, text='Monitoring')
+        self.notebook.add(self.Frame2, text='Training')
 
-    @QtCore.Slot()
-    def magic(self):
-        self.text.setText(random.choice(self.hello))
+        self.notebook.pack()
 
-if __name__ == "__main__":
-    app = QtWidgets.QApplication([])
+class Tab(ttk.Frame):
+    def __init__(self, container):
+        super().__init__()
 
-    widget = MyWidget()
-    widget.resize(800, 600)
-    widget.show()
+    def entry(self, text, row, column):
+        self.label = ttk.Label(self, text=text)
+        self.label.grid(column=column, row=row)
+        self.entry = ttk.Entry(self)
+        self.entry.grid(column=column+1, row=row, sticky=tk.E)
 
-    sys.exit(app.exec())
+class Frame1(Tab):
+    def __init__(self):
+        super().__init__()
+        self.entry(self, "asd", 1, 1)
+
+
+class Frame2(Tab):
+    def __init__(self):
+        super().__init__()
+
+
+
+
+if __name__ == '__main__':
+    app = MainApplication()
+    app.mainloop()
