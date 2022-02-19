@@ -36,22 +36,91 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/user-related/frontend" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/analyse" />
-      <recent name="$PROJECT_DIR$/gateway" />
+      <recent name="$PROJECT_DIR$/src/user-related/frontend/Tabs" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/process-related" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/client/analyse" />
+      <recent name="$PROJECT_DIR$/analyse" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/user-related/frontend" />
+      <recent name="$PROJECT_DIR$/server" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.training_tab">
-    <configuration name="Flash gui.py" type="MicroPythonConfigurationType" factoryName="MicroPython" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gui/gui.py">
+  <component name="RunManager" selected="Python.main frontend">
+    <configuration name="Flash main.py" type="MicroPythonConfigurationType" factoryName="MicroPython" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/process-related/server/main.py">
       <module name="imu_iot" />
       <method v="2" />
     </configuration>
-    <configuration name="Tab1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main backend" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="imu_iot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/user-related/backend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/user-related/backend/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main frontend" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="imu_iot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/user-related/frontend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/user-related/frontend/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="imu_iot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/process-related/server" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/process-related/server/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="imu_iot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,7 +132,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/Tab1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,76 +141,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gateway" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="imu_iot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gateway" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gateway/gateway.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="imu_iot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/gui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="training_tab" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="imu_iot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/training_tab.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="MicroPython.Flash main.py" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main server" />
+      <item itemvalue="Python.main backend" />
+      <item itemvalue="Python.main frontend" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.training_tab" />
-        <item itemvalue="Python.gui" />
-        <item itemvalue="Python.Tab1" />
-        <item itemvalue="Python.gateway" />
-        <item itemvalue="MicroPython.Flash gui.py" />
+        <item itemvalue="Python.main frontend" />
+        <item itemvalue="Python.main backend" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main server" />
+        <item itemvalue="MicroPython.Flash main.py" />
       </list>
     </recent_temporary>
   </component>
@@ -171,60 +184,122 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="424" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645180441582">
+      <screen x="0" y="0" width="1920" height="1004" />
+    </state>
+    <state x="424" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1004@0.0.1920.1004" timestamp="1645180441582" />
     <state x="-1223" y="-111" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1641468373865">
       <screen x="-1920" y="-433" width="1920" height="1004" />
     </state>
     <state x="-1223" y="-111" key="#com.intellij.fileTypes.FileTypeChooser/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641468373865" />
     <state x="-1223" y="-87" key="#com.intellij.fileTypes.FileTypeChooser/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640218980313" />
-    <state width="1259" height="72" key="GridCell.Tab.0.bottom" timestamp="1641571160738">
+    <state x="328" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1643143189110">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1114" height="117" key="GridCell.Tab.0.bottom/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641469054243" />
+    <state x="328" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1643143189109" />
+    <state width="1259" height="142" key="GridCell.Tab.0.bottom" timestamp="1645232191042">
+      <screen x="0" y="0" width="1280" height="733" />
+    </state>
+    <state width="1280" height="116" key="GridCell.Tab.0.bottom/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641854712187" />
     <state width="1899" height="134" key="GridCell.Tab.0.bottom/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640270482368" />
     <state width="1899" height="197" key="GridCell.Tab.0.bottom/-1920.-433.1920.1080/0.25.1280.775@-1920.-433.1920.1080" timestamp="1640219109808" />
-    <state width="1259" height="72" key="GridCell.Tab.0.bottom/0.0.1280.724@0.0.1280.724" timestamp="1641570556028" />
-    <state width="619" height="117" key="GridCell.Tab.0.bottom/0.0.1280.728@0.0.1280.728" timestamp="1641313106437" />
-    <state width="1259" height="72" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1641571160738" />
-    <state width="1114" height="117" key="GridCell.Tab.0.bottom/0.0.1920.1004@0.0.1920.1004" timestamp="1641486178446" />
-    <state width="1899" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1640097269758" />
-    <state width="1259" height="72" key="GridCell.Tab.0.center" timestamp="1641571160736">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1259" height="99" key="GridCell.Tab.0.bottom/0.0.1280.724@0.0.1280.724" timestamp="1643910012469" />
+    <state width="1259" height="305" key="GridCell.Tab.0.bottom/0.0.1280.726@0.0.1280.726" timestamp="1643747802212" />
+    <state width="1259" height="116" key="GridCell.Tab.0.bottom/0.0.1280.728@0.0.1280.728" timestamp="1641892789529" />
+    <state width="1259" height="142" key="GridCell.Tab.0.bottom/0.0.1280.731@0.0.1280.731" timestamp="1645230097485" />
+    <state width="1259" height="142" key="GridCell.Tab.0.bottom/0.0.1280.733@0.0.1280.733" timestamp="1645232191042" />
+    <state width="1259" height="142" key="GridCell.Tab.0.bottom/0.0.1280.734@0.0.1280.734" timestamp="1645232091487" />
+    <state width="1532" height="116" key="GridCell.Tab.0.bottom/0.0.1280.800/-1920.-433.1920.1004@-1920.-433.1920.1004" timestamp="1641993201747" />
+    <state width="1259" height="142" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1645227962266" />
+    <state width="1899" height="118" key="GridCell.Tab.0.bottom/0.0.1920.1004@0.0.1920.1004" timestamp="1645180468718" />
+    <state width="1899" height="119" key="GridCell.Tab.0.bottom/0.0.1920.1011@0.0.1920.1011" timestamp="1645180027953" />
+    <state width="1899" height="72" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1641734115790" />
+    <state width="1259" height="137" key="GridCell.Tab.0.bottom/2560.360.1920.1004/0.0.2560.1440@0.0.2560.1440" timestamp="1643573272070" />
+    <state width="1259" height="303" key="GridCell.Tab.0.bottom/2560.360.1920.1080/0.0.2560.1364@0.0.2560.1364" timestamp="1643811400200" />
+    <state width="1899" height="155" key="GridCell.Tab.0.bottom/2560.360.1920.1080/0.0.2560.1364@2560.360.1920.1080" timestamp="1644436205772" />
+    <state width="2539" height="71" key="GridCell.Tab.0.bottom/2560.385.1920.1055/0.0.2560.1440@0.0.2560.1440" timestamp="1643206186029" />
+    <state width="1259" height="142" key="GridCell.Tab.0.center" timestamp="1645232191042">
+      <screen x="0" y="0" width="1280" height="733" />
     </state>
-    <state width="1114" height="117" key="GridCell.Tab.0.center/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641469054241" />
+    <state width="1280" height="116" key="GridCell.Tab.0.center/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641854712170" />
     <state width="1899" height="134" key="GridCell.Tab.0.center/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640270482366" />
     <state width="1899" height="197" key="GridCell.Tab.0.center/-1920.-433.1920.1080/0.25.1280.775@-1920.-433.1920.1080" timestamp="1640219109806" />
-    <state width="1259" height="72" key="GridCell.Tab.0.center/0.0.1280.724@0.0.1280.724" timestamp="1641570556027" />
-    <state width="619" height="117" key="GridCell.Tab.0.center/0.0.1280.728@0.0.1280.728" timestamp="1641313106436" />
-    <state width="1259" height="72" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1641571160736" />
-    <state width="1114" height="117" key="GridCell.Tab.0.center/0.0.1920.1004@0.0.1920.1004" timestamp="1641486178446" />
-    <state width="1899" height="299" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1640097269756" />
-    <state width="1259" height="72" key="GridCell.Tab.0.left" timestamp="1641571160736">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1259" height="99" key="GridCell.Tab.0.center/0.0.1280.724@0.0.1280.724" timestamp="1643910012469" />
+    <state width="1259" height="305" key="GridCell.Tab.0.center/0.0.1280.726@0.0.1280.726" timestamp="1643747802204" />
+    <state width="1259" height="116" key="GridCell.Tab.0.center/0.0.1280.728@0.0.1280.728" timestamp="1641892789525" />
+    <state width="1259" height="142" key="GridCell.Tab.0.center/0.0.1280.731@0.0.1280.731" timestamp="1645230097484" />
+    <state width="1259" height="142" key="GridCell.Tab.0.center/0.0.1280.733@0.0.1280.733" timestamp="1645232191042" />
+    <state width="1259" height="142" key="GridCell.Tab.0.center/0.0.1280.734@0.0.1280.734" timestamp="1645232091487" />
+    <state width="1532" height="116" key="GridCell.Tab.0.center/0.0.1280.800/-1920.-433.1920.1004@-1920.-433.1920.1004" timestamp="1641993201743" />
+    <state width="1259" height="142" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1645227962265" />
+    <state width="1899" height="118" key="GridCell.Tab.0.center/0.0.1920.1004@0.0.1920.1004" timestamp="1645180468717" />
+    <state width="1899" height="119" key="GridCell.Tab.0.center/0.0.1920.1011@0.0.1920.1011" timestamp="1645180027953" />
+    <state width="1899" height="72" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1641734115787" />
+    <state width="1259" height="137" key="GridCell.Tab.0.center/2560.360.1920.1004/0.0.2560.1440@0.0.2560.1440" timestamp="1643573272069" />
+    <state width="1259" height="303" key="GridCell.Tab.0.center/2560.360.1920.1080/0.0.2560.1364@0.0.2560.1364" timestamp="1643811400199" />
+    <state width="1899" height="155" key="GridCell.Tab.0.center/2560.360.1920.1080/0.0.2560.1364@2560.360.1920.1080" timestamp="1644436205771" />
+    <state width="2539" height="71" key="GridCell.Tab.0.center/2560.385.1920.1055/0.0.2560.1440@0.0.2560.1440" timestamp="1643206186027" />
+    <state width="1259" height="142" key="GridCell.Tab.0.left" timestamp="1645232191042">
+      <screen x="0" y="0" width="1280" height="733" />
     </state>
-    <state width="1114" height="117" key="GridCell.Tab.0.left/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641469054241" />
+    <state width="1280" height="116" key="GridCell.Tab.0.left/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641854712167" />
     <state width="1899" height="134" key="GridCell.Tab.0.left/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640270482365" />
     <state width="1899" height="197" key="GridCell.Tab.0.left/-1920.-433.1920.1080/0.25.1280.775@-1920.-433.1920.1080" timestamp="1640219109805" />
-    <state width="1259" height="72" key="GridCell.Tab.0.left/0.0.1280.724@0.0.1280.724" timestamp="1641570556026" />
-    <state width="619" height="117" key="GridCell.Tab.0.left/0.0.1280.728@0.0.1280.728" timestamp="1641313106435" />
-    <state width="1259" height="72" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1641571160736" />
-    <state width="1114" height="117" key="GridCell.Tab.0.left/0.0.1920.1004@0.0.1920.1004" timestamp="1641486178445" />
-    <state width="1899" height="299" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1640097269755" />
-    <state width="1259" height="72" key="GridCell.Tab.0.right" timestamp="1641571160737">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1259" height="99" key="GridCell.Tab.0.left/0.0.1280.724@0.0.1280.724" timestamp="1643910012468" />
+    <state width="1259" height="305" key="GridCell.Tab.0.left/0.0.1280.726@0.0.1280.726" timestamp="1643747802204" />
+    <state width="1259" height="116" key="GridCell.Tab.0.left/0.0.1280.728@0.0.1280.728" timestamp="1641892789523" />
+    <state width="1259" height="142" key="GridCell.Tab.0.left/0.0.1280.731@0.0.1280.731" timestamp="1645230097484" />
+    <state width="1259" height="142" key="GridCell.Tab.0.left/0.0.1280.733@0.0.1280.733" timestamp="1645232191042" />
+    <state width="1259" height="142" key="GridCell.Tab.0.left/0.0.1280.734@0.0.1280.734" timestamp="1645232091486" />
+    <state width="1532" height="116" key="GridCell.Tab.0.left/0.0.1280.800/-1920.-433.1920.1004@-1920.-433.1920.1004" timestamp="1641993201742" />
+    <state width="1259" height="142" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1645227962263" />
+    <state width="1899" height="118" key="GridCell.Tab.0.left/0.0.1920.1004@0.0.1920.1004" timestamp="1645180468717" />
+    <state width="1899" height="119" key="GridCell.Tab.0.left/0.0.1920.1011@0.0.1920.1011" timestamp="1645180027952" />
+    <state width="1899" height="72" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1641734115786" />
+    <state width="1259" height="137" key="GridCell.Tab.0.left/2560.360.1920.1004/0.0.2560.1440@0.0.2560.1440" timestamp="1643573272069" />
+    <state width="1259" height="303" key="GridCell.Tab.0.left/2560.360.1920.1080/0.0.2560.1364@0.0.2560.1364" timestamp="1643811400198" />
+    <state width="1899" height="155" key="GridCell.Tab.0.left/2560.360.1920.1080/0.0.2560.1364@2560.360.1920.1080" timestamp="1644436205770" />
+    <state width="2539" height="71" key="GridCell.Tab.0.left/2560.385.1920.1055/0.0.2560.1440@0.0.2560.1440" timestamp="1643206186026" />
+    <state width="1259" height="142" key="GridCell.Tab.0.right" timestamp="1645232191042">
+      <screen x="0" y="0" width="1280" height="733" />
     </state>
-    <state width="1114" height="117" key="GridCell.Tab.0.right/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641469054242" />
+    <state width="1280" height="116" key="GridCell.Tab.0.right/-1920.-433.1920.1004/0.0.1280.800@-1920.-433.1920.1004" timestamp="1641854712175" />
     <state width="1899" height="134" key="GridCell.Tab.0.right/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640270482367" />
     <state width="1899" height="197" key="GridCell.Tab.0.right/-1920.-433.1920.1080/0.25.1280.775@-1920.-433.1920.1080" timestamp="1640219109807" />
-    <state width="1259" height="72" key="GridCell.Tab.0.right/0.0.1280.724@0.0.1280.724" timestamp="1641570556027" />
-    <state width="619" height="117" key="GridCell.Tab.0.right/0.0.1280.728@0.0.1280.728" timestamp="1641313106437" />
-    <state width="1259" height="72" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1641571160737" />
-    <state width="1114" height="117" key="GridCell.Tab.0.right/0.0.1920.1004@0.0.1920.1004" timestamp="1641486178446" />
-    <state width="1899" height="299" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1640097269757" />
+    <state width="1259" height="99" key="GridCell.Tab.0.right/0.0.1280.724@0.0.1280.724" timestamp="1643910012469" />
+    <state width="1259" height="305" key="GridCell.Tab.0.right/0.0.1280.726@0.0.1280.726" timestamp="1643747802210" />
+    <state width="1259" height="116" key="GridCell.Tab.0.right/0.0.1280.728@0.0.1280.728" timestamp="1641892789529" />
+    <state width="1259" height="142" key="GridCell.Tab.0.right/0.0.1280.731@0.0.1280.731" timestamp="1645230097485" />
+    <state width="1259" height="142" key="GridCell.Tab.0.right/0.0.1280.733@0.0.1280.733" timestamp="1645232191042" />
+    <state width="1259" height="142" key="GridCell.Tab.0.right/0.0.1280.734@0.0.1280.734" timestamp="1645232091487" />
+    <state width="1532" height="116" key="GridCell.Tab.0.right/0.0.1280.800/-1920.-433.1920.1004@-1920.-433.1920.1004" timestamp="1641993201745" />
+    <state width="1259" height="142" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1645227962265" />
+    <state width="1899" height="118" key="GridCell.Tab.0.right/0.0.1920.1004@0.0.1920.1004" timestamp="1645180468718" />
+    <state width="1899" height="119" key="GridCell.Tab.0.right/0.0.1920.1011@0.0.1920.1011" timestamp="1645180027953" />
+    <state width="1899" height="72" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1641734115789" />
+    <state width="1259" height="137" key="GridCell.Tab.0.right/2560.360.1920.1004/0.0.2560.1440@0.0.2560.1440" timestamp="1643573272070" />
+    <state width="1259" height="303" key="GridCell.Tab.0.right/2560.360.1920.1080/0.0.2560.1364@0.0.2560.1364" timestamp="1643811400199" />
+    <state width="1899" height="155" key="GridCell.Tab.0.right/2560.360.1920.1080/0.0.2560.1364@2560.360.1920.1080" timestamp="1644436205772" />
+    <state width="2539" height="71" key="GridCell.Tab.0.right/2560.385.1920.1055/0.0.2560.1440@0.0.2560.1440" timestamp="1643206186028" />
     <state x="298" y="0" width="982" height="724" key="SettingsEditor" timestamp="1641559790551">
       <screen x="0" y="0" width="1280" height="724" />
     </state>
     <state x="-1451" y="-257" key="SettingsEditor/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640219008998" />
     <state x="298" y="0" width="982" height="724" key="SettingsEditor/0.0.1280.724@0.0.1280.724" timestamp="1641559790551" />
     <state x="298" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1640542708163" />
+    <state x="484" y="195" key="refactoring.ChangeSignatureDialog" timestamp="1642802405045">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="484" y="195" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1642802405045" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gui/monitoringtab.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

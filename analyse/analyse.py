@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import signal
 
-df = pd.read_csv('../client/imu.csv', usecols = ["datetime", "A_X", "A_Y", "A_Z"])
+df = pd.read_csv('../src/process-related/client/imu.csv', usecols = ["datetime", "A_X", "A_Y", "A_Z"])
 print(df)
 StartSample = 0
 LengthSample = len(df.index)
