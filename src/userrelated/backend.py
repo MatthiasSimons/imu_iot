@@ -126,11 +126,10 @@ def processing():
             "prediction_history_pumpe": prediction_history_pumpe,
             "prediction_history_betriebszustand": prediction_history_betriebszustand
         }
-    print(processed_dataset)
     target.insert(processed_dataset)
+    print(processed_dataset)
 
 if __name__ == "__main__":
     while 1:
         processing()
-        #print(data())
         time.sleep(1)

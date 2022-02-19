@@ -6,10 +6,10 @@ import numpy as np
 class Gateway:
     def __init__(self, collection):
         self.client_ip = "localhost:27017"
-        self.tcp_ip = '192.168.0.104'
+        self.tcp_ip = '192.168.101.129'
         self.tcp_port = 8000
         self.batch_size = 64
-        self.database_name = "monitoring"
+        self.database_name = "DLSP-Project"
 
         self.client = MongoClient(self.client_ip)
         self.db = self.client[self.database_name]
@@ -33,13 +33,14 @@ class BNK(Gateway):
         query[0].pop("_id")
 
         df = pd.DataFrame.from_dict(query[0], orient="index")
-        df.index = pd.to_datetime(df.index, format='%Y/%m/%d %H:%M:%S:%f')
+        df.index = pd.to_datetime(df.index, format='%Y/%m/%d %H:%M:%S:%f', errors="ignore")
 
         df = df[0].str.split(",", expand=True)
         df.columns = ["AX", "AY", "AZ"]
-        df["AX"] = df["AX"].astype(float)
-        df["AY"] = df["AY"].astype(float)
-        df["AZ"] = df["AZ"].astype(float)
+
+        df["AX"] = df["AX"].astype(float, errors="ignore")
+        df["AY"] = df["AY"].astype(float, errors="ignore")
+        df["AZ"] = df["AZ"].astype(float, errors="ignore")
 
         df["A"] = np.sqrt(df["AX"] ** 2 + df["AY"] ** 2 + df["AZ"] ** 2)
 

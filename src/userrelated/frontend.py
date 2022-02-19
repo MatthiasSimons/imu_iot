@@ -9,7 +9,6 @@ import time
 import threading
 from src import gateway
 
-
 class TrainingTab:
     def __init__(self, root):
         self.root = root
@@ -206,40 +205,14 @@ class MonitoringTabPlot:
         fig = Figure()
 
         self.ax3 = fig.add_subplot(311)
-        self.ax3.set_title("Trommel")
-        #self.ax3.set_xlabel("time")
-        self.ax3.set_ylabel("state")
-        self.ax3.grid()
         self.ax3.plot([], [], marker='', color='orange')
-        self.ax3.axes.xaxis.set_ticklabels([])
-        #self.ax3.legend(labels=["1: Stillstand\n2: Rotieren\n3: Schleudern"])
-        self.ax3.legend(labels=["1: Stillstand, 2: Rotieren, 3: Schleudern"],
-                        loc='upper center', bbox_to_anchor=(0.5, -0.05),
-                        fancybox=True, shadow=True, ncol=5)
+
 
         self.ax4 = fig.add_subplot(312)
-        self.ax4.set_title("Pumpe")
-        self.ax4.set_xlabel("time")
-        self.ax4.set_ylabel("state")
-        self.ax4.grid()
         self.ax4.plot([], [], marker='', color='orange')
-        self.ax4.axes.xaxis.set_ticklabels([])
-        #self.ax4.legend(labels=["1: An\n2: Aus\n"])
-        self.ax4.legend(labels=["1: An, 2: Aus"],
-                        loc='upper center', bbox_to_anchor=(0.5, -0.05),
-                        fancybox=True, shadow=True, ncol=5)
 
         self.ax5 = fig.add_subplot(313)
-        self.ax5.set_title("Betriebszustand")
-        self.ax5.set_xlabel("time")
-        self.ax5.set_ylabel("state")
-        self.ax5.grid()
         self.ax5.plot([], [], marker='', color='orange')
-        self.ax5.axes.xaxis.set_ticklabels([])
-        #self.ax5.legend(labels=["1: Bereit/Fertig\n2: Waschen\n3: Spülen\n3: Schleudern"])
-        self.ax5.legend(labels=["1: Bereit/Fertig, 2: Waschen, 3: Spülen, 4: Schleudern"],
-                        loc='upper center', bbox_to_anchor=(0.5, -0.05),
-                        fancybox=True, shadow=True, ncol=5)
 
         fig.set_tight_layout(True)
 
@@ -257,9 +230,42 @@ class MonitoringTabPlot:
         prediction_history_pumpe = query["prediction_history_pumpe"]
         prediction_history_betriebszustand = query["prediction_history_betriebszustand"]
 
-        self.ax3.plot(timestamp_history, prediction_history_trommel, marker='', color='orange')
-        self.ax4.plot(timestamp_history, prediction_history_pumpe, marker='', color='orange')
-        self.ax5.plot(timestamp_history, prediction_history_betriebszustand, marker='', color='orange')
+        self.ax3.clear()
+        self.ax4.clear()
+        self.ax5.clear()
+
+
+        self.ax3.plot(prediction_history_trommel, marker='', color='orange')
+        self.ax3.set_title("Trommel")
+        #self.ax3.set_xlabel("time")
+        self.ax3.set_ylabel("state")
+        self.ax3.grid()
+        self.ax3.axes.xaxis.set_ticklabels([])
+        #self.ax3.legend(labels=["1: Stillstand\n2: Rotieren\n3: Schleudern"])
+        self.ax3.legend(labels=["1: Stillstand, 2: Rotieren, 3: Schleudern"],
+                        loc='upper center', bbox_to_anchor=(0.5, -0.05),
+                        fancybox=True, shadow=True, ncol=5)
+
+        self.ax4.plot(prediction_history_pumpe, marker='', color='orange')
+        self.ax4.set_title("Pumpe")
+        self.ax4.set_xlabel("time")
+        self.ax4.set_ylabel("state")
+        self.ax4.grid()
+        self.ax4.axes.xaxis.set_ticklabels([])
+        #self.ax4.legend(labels=["1: An\n2: Aus\n"])
+        self.ax4.legend(labels=["1: An, 2: Aus"],
+                        loc='upper center', bbox_to_anchor=(0.5, -0.05),
+                        fancybox=True, shadow=True, ncol=5)
+
+        self.ax5.plot(prediction_history_betriebszustand, marker='', color='orange')
+        self.ax5.set_title("Betriebszustand")
+        self.ax5.set_xlabel("time")
+        self.ax5.set_ylabel("state")
+        self.ax5.grid()
+        self.ax5.axes.xaxis.set_ticklabels([])
+        self.ax5.legend(labels=["1: Bereit/Fertig, 2: Waschen, 3: Spülen, 4: Schleudern"],
+                        loc='upper center', bbox_to_anchor=(0.5, -0.05),
+                        fancybox=True, shadow=True, ncol=5)
 
         self.graph.draw()
 
@@ -454,7 +460,6 @@ class Led:
     self.set_color()
     self.prob.config(text=self.prob_value_string)
 
-
   def set_color(self):
     if self.alpha < 0.1:
       self.color = "#ffffff"
@@ -500,8 +505,10 @@ class Tab_Control:
         tab2 = TrainingTab(root=self.TabControl2)
         #tab3 = Plot(root=self.TabControl3)
 
-
-if __name__=='__main__':
+class Frontend():
     root = Tk()
     application = Tab_Control(root)
     root.mainloop()
+
+if __name__ == '__main__':
+    Frontend()
