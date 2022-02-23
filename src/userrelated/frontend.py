@@ -166,7 +166,10 @@ class TrainingTabPlot:
         acceleration = pd.DataFrame.from_dict(query["acceleration"], orient="index")
         acceleration.index = pd.to_datetime(acceleration.index, format="%Y/%m/%d %H:%M:%S:%f")
         acceleration.sort_index(inplace=True)
-        x,y = acceleration.index, acceleration[0]
+        try:
+            x,y = acceleration.index, acceleration[0]
+        except:
+            x,y =[],[]
 
         acceleration_fft = query["acceleration_fft"]
 

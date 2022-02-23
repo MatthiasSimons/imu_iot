@@ -1,13 +1,8 @@
-import os
-import time
 import joblib
 import numpy as np
 import pandas as pd
 from src.gateway import BNK
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPClassifier
-import random
+
 
 class ClassifierModel:
     def __init__(self, model_name):
@@ -19,12 +14,13 @@ class ClassifierModel:
         self.classifier = joblib.load(self.directory+self.model_file_name)
 
     def predict(self, fft):
-        X_std = self.scaler.transform(fft)
-        prediction = self.classifier.predict(X_std)
-        probabilities = self.classifier.predict_proba(X_std)
+        X_std = self.scaler.transform(fft.values)
+        prediction = self.classifier.predict(X_std).tolist()[0]
+        probabilities = self.classifier.predict_proba(X_std).tolist()[0]
         return prediction, probabilities
 
-source = BNK(collection ="process_data")
+
+source = BNK(collection ="training")
 target = BNK(collection ="backend")
 target.clear()
 
@@ -39,7 +35,6 @@ prediction_history_betriebszustand = []
 classifier_trommel = ClassifierModel("Trommel")
 classifier_pumpe = ClassifierModel("Pumpe")
 classifier_betriebszustand = ClassifierModel("Betriebszustand")
-
 
 def fft(df):
     """function for fast fourier analysis"""
@@ -58,31 +53,31 @@ def processing():
     4. (plot acceleration and trainings_fft)
     5. return df, acceleration_fft and label probabilities
         """
+
     history_length = 10
     query = source.query(last=1)
     acceleration = source.prepare(query)
     timestamp = acceleration.index.max()
-
     acceleration_A = acceleration["A"]
     acceleration_A.index = acceleration_A.index.strftime('%Y/%m/%d %H:%M:%S:%f')
 
     try:
         acceleration_fft = fft(acceleration_A)
+
     except:
         acceleration_fft = []
+    acceleration_fft_df = pd.DataFrame(acceleration_fft).T
 
     #------------------------------------------------------
     # ml-model
-    # model.predict(acceleration_fft)
-    prediction_trommel, probabilities_trommel = classifier_trommel.predict(acceleration_fft)
-    prediction_pumpe, probabilities_pumpe = classifier_pumpe.predict(acceleration_fft)
-    prediction_betriebszustand, probabilities_betriebszustand = classifier_betriebszustand.predict(acceleration_fft)
+    prediction_trommel, probabilities_trommel = classifier_trommel.predict(acceleration_fft_df)
+    prediction_pumpe, probabilities_pumpe = classifier_pumpe.predict(acceleration_fft_df)
+    prediction_betriebszustand, probabilities_betriebszustand = classifier_betriebszustand.predict(acceleration_fft_df)
 
     timestamp_history.append(timestamp)
     prediction_history_trommel.append(prediction_trommel)
     prediction_history_pumpe.append(prediction_pumpe)
     prediction_history_betriebszustand.append(prediction_betriebszustand)
-
 
     if len(timestamp_history) >= history_length:
         timestamp_history.pop(0)
@@ -105,10 +100,16 @@ def processing():
             "prediction_history_pumpe": prediction_history_pumpe,
             "prediction_history_betriebszustand": prediction_history_betriebszustand
         }
+
     target.insert(processed_dataset)
     print(processed_dataset)
 
 if __name__ == "__main__":
     while 1:
         processing()
-        time.sleep(1)
+        # try:
+        #     processing()
+        #     time.sleep(0.5)
+        # except Exception as e:
+        #     print(e)
+        #     continue

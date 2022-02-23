@@ -37,7 +37,6 @@ class BNK(Gateway):
 
     def prepare(self, query):
         """function for acceleration cleaning; returns a pandas DataFrame"""
-
         query[0].pop("_id")
 
         df = pd.DataFrame.from_dict(query[0], orient="index")
@@ -113,5 +112,5 @@ class PNK(Gateway):
         conn.close()
 
 if __name__ == "__main__":
-    gw = PNK(collection = "process")
-    gw.insert(training=False)
+    gw = PNK(collection = "training")
+    gw.insert(training=True)
