@@ -156,7 +156,12 @@ class TrainingTabPlot:
         self.root.update()
 
     def plotter(self):
-        query = self.database.query(last=1)[0]
+        try:
+            query = self.database.query(last=1)[0]
+        except:
+            query = {}
+            query["acceleration"] = []
+            query["acceleration_fft"] = []
 
         acceleration = pd.DataFrame.from_dict(query["acceleration"], orient="index")
         acceleration.index = pd.to_datetime(acceleration.index, format="%Y/%m/%d %H:%M:%S:%f")
@@ -223,7 +228,15 @@ class MonitoringTabPlot:
         self.root.update()
 
     def plotter(self):
-        query = self.database.query(last=1)[0]
+        try:
+            query = self.database.query(last=1)[0]
+        except:
+            query = {}
+            query["timestamp_history"] = []
+            query["prediction_history_trommel"] = []
+            query["prediction_history_pumpe"] = []
+            query["prediction_history_betriebszustand"] = []
+
 
         timestamp_history = query["timestamp_history"]
         prediction_history_trommel = query["prediction_history_trommel"]
@@ -346,7 +359,14 @@ class MonitoringTab:
     self.root.update()
 
   def predicter(self):
-    query = self.database.query(last=1)[0]
+    try:
+        query = self.database.query(last=1)[0]
+    except:
+        query = {}
+        query["probabilities_trommel"] = [0,0,0]
+        query["probabilities_betriebszustand"] = [0,0,0,0]
+        query["probabilities_pumpe"] = [0,0]
+
     trommel_probabilities = query["probabilities_trommel"]
     betriebszustand_probabilities = query["probabilities_betriebszustand"]
     pumpe_probabilities = query["probabilities_pumpe"]
@@ -396,35 +416,35 @@ class MonitoringTab:
 
     keep_predicting = self.root.after(1000, self.predicter)
 
-class Connection:
-  def __init__(self, root, column, row):
-    self.root = root
-    self.column = column
-    self.row = row
-    self.state = False
-    #self.text = "..."
+    class Connection:
+        def __init__(self, root, column, row):
+            self.root = root
+            self.column = column
+            self.row = row
+            self.state = False
+            #self.text = "..."
 
-    self.color = "#d9d9d9"
+            self.color = "#d9d9d9"
 
-    size = 20
-    x, y, r = size / 2, size / 2, size / 2
-    self.canvas = Canvas(self.root, width=size, height=size)
-    self.canvas.grid(column=self.column, row=self.row, sticky="w")
-    self.circle = self.canvas.create_oval(x, y, x + r, y + r, fill=self.color, outline="#000000", width=1)
+            size = 20
+            x, y, r = size / 2, size / 2, size / 2
+            self.canvas = Canvas(self.root, width=size, height=size)
+            self.canvas.grid(column=self.column, row=self.row, sticky="w")
+            self.circle = self.canvas.create_oval(x, y, x + r, y + r, fill=self.color, outline="#000000", width=1)
 
-    self.label = Label(self.root, text="not connected")
-    self.label.config(anchor=CENTER)
-    self.label.grid(column=self.column+1, row=self.row, sticky="w")
+            self.label = Label(self.root, text="not connected")
+            self.label.config(anchor=CENTER)
+            self.label.grid(column=self.column+1, row=self.row, sticky="w")
 
-  def update(self):
-    if self.state:
-      self.color = "#00ff00"
-      self.label.config(text="connected")
+        def update(self):
+            if self.state:
+              self.color = "#00ff00"
+              self.label.config(text="connected")
 
-    else:
-      self.color = "#FE0000"
+            else:
+              self.color = "#FE0000"
 
-    self.canvas.itemconfig(self.circle, fill=self.color)
+            self.canvas.itemconfig(self.circle, fill=self.color)
 
 class Led:
   def __init__(self, root, column, row, text, alpha=None):

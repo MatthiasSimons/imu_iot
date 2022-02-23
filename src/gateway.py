@@ -2,16 +2,24 @@ from pymongo import MongoClient
 import socket
 import pandas as pd
 import numpy as np
+import certifi
 
 class Gateway:
     def __init__(self, collection):
+        ca = certifi.where()
+        self.connection_string = "mongodb+srv://Matthias_:Matthias_@cluster0.nnlr5.mongodb.net/DLSP_Project?retryWrites=true&w=majority"
         self.client_ip = "localhost:27017"
-        self.tcp_ip = '192.168.101.129'
-        self.tcp_port = 8000
+        self.tcp_ip = "192.168.178.41"
+        self.tcp_port = 8001
         self.batch_size = 64
         self.database_name = "DLSP-Project"
-
-        self.client = MongoClient(self.client_ip)
+        try:
+            self.client = MongoClient(self.connection_string, tlsCAFile=ca) # connection string
+            #print("Connected to MongoDB Atlas Database")
+        except Exception as e:
+            print(e)
+            self.client = MongoClient(self.client_ip)
+            print("Connected to local MongoDB Database")
         self.db = self.client[self.database_name]
         self.collection = self.db[collection]
 
