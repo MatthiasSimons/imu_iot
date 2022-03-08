@@ -107,9 +107,4 @@ def processing():
 if __name__ == "__main__":
     while 1:
         processing()
-        # try:
-        #     processing()
-        #     time.sleep(0.5)
-        # except Exception as e:
-        #     print(e)
-        #     continue
+
