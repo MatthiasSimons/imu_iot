@@ -14,29 +14,12 @@ server_connection = False
 accel_array = []
 batch_size = 1
 
-# ssid, pwd, ip = "iPhone von Matthias", "Matthias", ""
-# ssid, pwd, ip = "Tyrion LANnister", "ALM_PtrStr13", "192.168.0.129"
-ssid, pwd, ip = "Hoehlenstrahlung", "liebstdudiehoehle", '192.168.0.104'
-# ssid, pwd, ip = "HI-EG-2-4", "778328778328778328", "192.168.178.21"
-# ssid, pwd, ip = "Haus LANnister", "Gast_PtrStr13", "192.168.101.77"
-# ssid, pwd, ip = "FRITZ!Box 7530 XU", "Simons_Wlan_2020", "192.168.178.41"
-# ssid, pwd, ip = "brauchst du wlan lan?", "koeftespiess", "192.168.101.205"
+ssid, pwd, ip = "", "", '' # enter ssid, password and ip
+
 
 def read_imu(tim):
     try:
-        # dt = rtc.datetime()
-        # year, month, day, weekday, hour, minute, second, microsecond = dt[0], dt[1], dt[2], dt[3], dt[4], dt[5], dt[6], dt[7]
-
-        # dt = "{}/{}/{} {}:{}:{}:{},".format(year, month, day, hour, minute, second, int(microsecond/10*10)) #prüfen
-        # acceleration = "{0:3.5f},{1:3.5f},{2:3.5f}?".format(accel.x, accel.y, accel.z)
-
-        # data_string = "{};{}?".format(str(rtc.datetime()), str(accel.xyz))
-        # data_string = str(dt)+acceleration
-        # accel_array.append(data_string)
-
-        # DataCounter += 1
         s.send("{};{}?".format(str(rtc.datetime()), str(accel.xyz)).encode())
-
 
     except Exception as e:
         status = False
