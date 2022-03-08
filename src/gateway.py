@@ -7,9 +7,9 @@ import certifi
 class Gateway:
     def __init__(self, collection):
         ca = certifi.where()
-        self.connection_string = "mongodb+srv://Matthias_:Matthias_@cluster0.nnlr5.mongodb.net/DLSP_Project?retryWrites=true&w=majority"
+        self.connection_string = "" # enter connection string
         self.client_ip = "localhost:27017"
-        self.tcp_ip = "192.168.178.41"
+        self.tcp_ip = ""# enter port
         self.tcp_port = 8001
         self.batch_size = 64
         self.database_name = "DLSP-Project"
