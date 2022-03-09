@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
@@ -322,12 +323,12 @@
     <state width="1259" height="303" key="GridCell.Tab.0.right/2560.360.1920.1080/0.0.2560.1364@0.0.2560.1364" timestamp="1643811400199" />
     <state width="1899" height="155" key="GridCell.Tab.0.right/2560.360.1920.1080/0.0.2560.1364@2560.360.1920.1080" timestamp="1644436205772" />
     <state width="2539" height="71" key="GridCell.Tab.0.right/2560.385.1920.1055/0.0.2560.1440@0.0.2560.1440" timestamp="1643206186028" />
-    <state x="298" y="0" width="982" height="724" key="SettingsEditor" timestamp="1645542601890">
-      <screen x="0" y="0" width="1280" height="724" />
+    <state x="298" y="0" width="982" height="724" key="SettingsEditor" timestamp="1646833999225">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="-1451" y="-257" key="SettingsEditor/-1920.-433.1920.1080/0.0.1280.800@-1920.-433.1920.1080" timestamp="1640219008998" />
     <state x="298" y="0" width="982" height="724" key="SettingsEditor/0.0.1280.724@0.0.1280.724" timestamp="1645542601890" />
-    <state x="298" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1640542708163" />
+    <state x="298" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1646833999225" />
     <state x="484" y="195" key="refactoring.ChangeSignatureDialog" timestamp="1642802405045">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

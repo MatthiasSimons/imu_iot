@@ -1,0 +1,8 @@
+pandas~=1.0.4
+numpy~=1.18.4
+certifi~=2021.5.30
+pymongo~=4.0.1
+joblib~=1.1.0
+DateTime~=4.3
+matplotlib~=3.5.1
+setuptools~=41.2.0
